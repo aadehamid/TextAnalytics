@@ -7,23 +7,27 @@ This project uses Microsoft Azure's Text Analytics Cognitive Service to analyze 
 - Executes some manual processing of a text file
 - Analyzes the important part of a text to extract the most used words
 
-## Installation
+## Installation instruction >> demo contribution
 
 You can clone this repository locally and start editing the _ipynb_ file in Jupyter Notebooks or other tools such as Google Colab. If you have Anaconda installed you can install Jupyter Notebooks, start a server and open this file. If you don't want to install anything, you can also try using Google Colab or Azure Notebooks.
 
 I recommend using Google Colab, here are the steps that you need to perform to get this repo in your Drive folders:
 
 1. Mount Drive on a new Google Colab notebook (which you can create [here](https://colab.research.google.com/)
+
 ```python
 from google.colab import drive
 drive.mount('/content/drive')
 ```
+
 2. Change directory over to one of the folders in your Drive:
+
 ```python
 %cd drive/My\ Drive/repos/TextAnalytics
 ```
-> Note: be very mindful about that __%__ sign, if you use the usual __!__ the cd command won't work.
-3. Clone the repo preferrably using this notation:
+
+> Note: be very mindful about that **%** sign, if you use the usual **!** the cd command won't work. 3. Clone the repo preferrably using this notation:
+
 ```python
 !git clone https://{github_username}:{github_password_with_url_encoding}@github.com/LaloCo/TextAnalytics.git
 ```
@@ -38,7 +42,6 @@ textAnalyticsKey = 'd01a6b835c8244619c42e824dc2faf19'
 ```
 
 The last cell on the other hand displays the distribution of words in a bar chart only up until the 60th most used word, you can of course change that.
-
 
 ```python
 %matplotlib inline
